@@ -1,5 +1,6 @@
 package android.example.com.magicbutton;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +9,7 @@ import android.view.WindowManager;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class SplashScreen extends AppCompatActivity {
+public class SplashScreen extends Activity {
 
     long Delay = 1000;
 
@@ -34,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
 
                 // Start MainActivity.class
                 Intent myIntent = new Intent(SplashScreen.this,
-                        MainActivity.class);
+                        Main2Activity.class);
                 startActivity(myIntent);
             }
         };
